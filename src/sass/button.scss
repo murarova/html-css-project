@@ -1,4 +1,11 @@
-.button {
+button,
+button:hover,
+button:active,
+button:focus {
+    outline: none;
+    border: none;
+}
+button {
   width: 145px;
   height: 37px;
   background: #ff6b08;
@@ -7,12 +14,36 @@
   font-family: $main-font;
   font-weight: 800;
   font-size: 0.5em;
-
+  display: block;
   &:hover {
-    box-shadow: 0 0 3px #ff6b08;
+      box-shadow: 0 0 3px #ff6b08;
   }
-
   &:active {
-    box-shadow: 0 0 3px #ffffff;
+      box-shadow: 0 0 3px #ffffff;
+  }
+  @media (min-width:480px) {
+      width: 219px;
+      height: 54px;
+      font-size: 0.75em;
+  }
+ @media (min-width:768px) {
+     width: 111px;
+     height: 30px;
+     font-size: 0.42em;
+  }
+  @media (min-width:960px) {
+      width: 137px;
+      height: 35px;
+      font-size: 0.5em;
+  }
+  @media (min-width:1200px) {
+      width: 122px;
+      height: 31px;
+      font-size: 0.43em;
+  }
+  @media (min-width:1440px) {
+      width: 146px;
+      height: 38px;
+      font-size: 0.51em;
   }
 }
