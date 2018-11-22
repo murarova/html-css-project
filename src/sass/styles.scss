@@ -1,9 +1,11 @@
 /*
    Import partials below
 */
-@import './normalize';
 @import './bootstrap-grid';
+@import './normalize';
 @import './helpers/variables';
 @import './fonts';
 @import './button';
-
+@import './header';
+@import './common';
+@import './footer';

@@ -1,0 +1,320 @@
+.header-footer-wrapper {
+    @media (min-width: 320px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @media (min-width:480px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media (min-width:768px) {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+    @media (min-width:960px) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    @media (min-width:1200px) {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    @media (min-width:1440px) {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
+
+.head-section {
+    background: url(../images/header/320/GoIt_bg.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+    background-size: 325px 90px, auto;
+    background-position: center;
+    height: 100vh;
+    max-height: 450px;
+    position: relative;
+    padding-top: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    @media (min-width: 480px) {
+        background: url(../images/header/480/GoIt_bg_480.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+        max-height: 615px;
+        padding-top: 15px;
+    }
+    @media (min-width: 768px) {
+        background: url(../images/header/768/background-man.png) 84% 100px no-repeat, url(../images/header/GoIt_bg_768.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+        background-size: auto, 325px 90px, auto;
+        max-height: 478px;
+        padding-top: 21px;
+    }
+    @media (min-width: 960px) {
+        max-height: 596px;
+        padding-top: 26px;
+        background: url(../images/header/960/background-man_960.png) 84% 100px no-repeat, url(../images/header/960/GoIt_bg_960.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+    }
+    @media (min-width:1200px) {
+        min-height: 530px;
+        background: url(../images/header/1200/background-man_1200.png) 65% 100px no-repeat, url(../images/header/1200/GoIt_bg_1200.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+    }
+    @media (min-width:1200px) {
+        min-height: 637px;
+        background: url(../images/header/1440/background-man_1440.png) 65% 100px no-repeat, url(../images/header/1440/GoIt_bg_1440.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+    }
+}
+
+header {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-header {
+    background: url(../images/header/320/burg_menu.png) no-repeat;
+    width: 17px;
+    height: 12px;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.caption-header {
+    color: $base-color-second;
+    text-transform: uppercase;
+    padding-top: 24px;
+    text-align: center;
+    font-size: 18px;
+    width: 165px;
+    margin: 0 auto;
+    @media (min-width: 480px) {
+        font-size: 24px;
+        padding-top: 64px;
+        width: 245px;
+    }
+    @media (min-width:768px) {
+        font-size: 44.8px;
+        width: 350px;
+        margin: 0;
+        margin-bottom: 122px;
+    }
+    @media (min-width: 960px) {
+        font-size: 56.08px;
+        width: 440px;
+        padding-top: 102px;
+        margin-bottom: 122px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 50px;
+        width: 390px;
+        margin-left: 100px;
+        margin-bottom: 106px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 60px;
+        width: 470px;
+        margin-bottom: 80px;
+        margin-left: 230px;
+    }
+}
+
+.main-text-header {
+    @media (min-width: 768px) {
+        width: 155px;
+        height: 165px;
+        position: absolute;
+        top: 80px;
+        right: 65px;
+    }
+    @media (min-width: 960px) {
+        width: 165px;
+        height: 200px;
+        top: 118px;
+        right: 80px;
+    }
+    @media (min-width: 1200px) {
+        width: 175px;
+        right: 136px;
+    }
+    @media (min-width: 1440px) {
+        right: 245px;
+    }
+}
+
+.main-text-header__slogan {
+    color: $base-color-second;
+    line-height: 1.35;
+    font-family: $main-font;
+    font-weight: 800;
+    max-width: 280px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 8px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    @media (min-width: 480px) {
+        font-size: 13.5px;
+        max-width: 400px;
+        text-align: left;
+    }
+    @media (min-width: 768px) {
+        font-size: 10px;
+        text-align: left;
+        margin-bottom: 25px;
+        line-height: 1.8;
+    }
+    @media (min-width: 960px) {
+        font-size: 9.8px;
+        line-height: 1.5;
+    }
+    @media (min-width: 1200px) {
+        font-size: 11.2px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 13.5px;
+    }
+}
+
+.main-text-header__quote {
+    color: $base-color-second;
+    line-height: 1.35;
+    font-family: $main-font;
+    font-weight: 600;
+    max-width: 280px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 8px;
+    text-align: center;
+    margin-bottom: 112px;
+    margin-right: auto;
+    margin-left: auto;
+    @media (min-width: 480px) {
+        font-size: 13.5;
+        max-width: 400px;
+        margin-bottom: 112px;
+    }
+    @media (min-width: 768px) {
+        font-size: 7.84px;
+        text-align: left;
+        margin: 0 0 0 50px;
+        width: 175px;
+        height: 60px;
+        line-height: 1.4;
+    }
+    @media (min-width: 960px) {
+        font-size: 9.8px;
+        line-height: 1.5;
+        width: 245px;
+        height: 65px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 8.7px;
+        width: 195px;
+        margin-left: 150px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 10.5px;
+        width: 197px;
+        margin-left: 326px;
+    }
+}
+
+.main-text-header__description {
+    color: $base-color-third; 
+    font-size: 11.2px;
+    max-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 28.8px;
+    @media (min-width: 480px) {
+        font-size: 13px;
+        margin-bottom: 42px;
+        max-width: 400px;
+    }
+    @media (min-width:768px) {
+        font-size: 9px;
+    }
+    @media (min-width:768px) {
+        font-size: 11.2px;
+        line-height: 1.5;
+    }
+    @media (min-width:960px) {
+        font-size: 11.2px;
+    }
+    @media (min-width:1200px) {
+        font-size: 10px;
+    }
+    @media (min-width:1200px) {
+        font-size: 12px;
+        width: 140px;
+        margin: 0;
+    }
+}
+
+.background-logo {
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+.button--position {
+    margin: 0 auto;
+    @media (min-width: 768px) {
+        margin: 32px 0 25px 50px;
+    }
+    @media (min-width: 768px) {
+        margin: 32px 0 30px 50px;
+    }
+    @media (min-width: 1200px) {
+        margin: 40px 0 30px 150px;
+    }
+    @media (min-width: 1440px) {
+        margin: 80px 0 30px 150px;
+    }
+}
+
+#svg {
+    display: none;
+}
+
+.social-webs {
+    display: none;
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        width: 35px;
+        height: 15px;
+        position: absolute;
+        bottom: 100px;
+        right: 65px;
+    }
+    @media (min-width:960px) {
+        right: 80px;
+        width: 46px;
+        height: 15px;
+    }
+    @media (min-width:1200px) {
+        position: static;
+        align-self: flex-end;
+    }
+}
+
+.svg-size {
+    width: 11px;
+    height: 11px;
+}
+
+.page-numder {
+    @media (min-width: 768px) {
+        background: url(../images/header/320/page-number.png);
+        width: 31px;
+        height: 41px;
+    }
+    @media (min-width:960px) {}
+}
+
+.header-bottom-path {
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
