@@ -61,7 +61,7 @@
         content: 'YOU';
         position: absolute;
         transform: rotate(90deg);
-        bottom: -40px;
+        top: 40px;
         left: -95px;
         font-family: $main-font;
         font-weight: 800;
@@ -80,14 +80,12 @@
     }
 }
 
-
-
 .list {
-    list-style-type: square;
     padding: 10px 0 0 25px;
 }
 
 .list__item {
+    list-style: square;
     padding-bottom: 10px;
 
     &--mark-text {
