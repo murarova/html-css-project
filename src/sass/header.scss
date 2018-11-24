@@ -1,0 +1,447 @@
+.header-wrapper {
+    @media (min-width: 320px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @media (min-width:480px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media (min-width:768px) {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+    @media (min-width:960px) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    @media (min-width:1200px) {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    @media (min-width:1440px) {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
+.head-section {
+    background: url(../images/320px/header/GoIt_bg.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+    background-size: 325px 90px, auto;
+    background-position: center;
+    height: 100vh;
+    max-height: 450px;
+    position: relative;
+    padding-top: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    @media (min-width: 480px) {
+        background: url(../images/480px/header/GoIt_bg_480.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+        max-height: 615px;
+        padding-top: 15px;
+    }
+    @media (min-width: 768px) {
+        background: url(../images/768px/header/background-man.png) 84% 100px no-repeat, url(../images/768px/header/GoIt_bg_768.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+        background-size: auto, 325px 90px, auto;
+        max-height: 478px;
+        padding-top: 21px;
+    }
+    @media (min-width: 960px) {
+        max-height: 596px;
+        padding-top: 26px;
+        background: url(../images/960px/header/background-man_960.png) 81% 100px no-repeat, url(../images/960px/header/GoIt_bg_960.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+    }
+    @media (min-width:1200px) {
+        min-height: 530px;
+        background: url(../images/1200px/header/background-man_1200.png) 65% 100px no-repeat, url(../images/1200px/header/GoIt_bg_1200.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+    }
+    @media (min-width:1200px) {
+        min-height: 637px;
+        background: url(../images/1440px/header/background-man_1440.png) 65% 100px no-repeat, url(../images/1440px/header/GoIt_bg_1440.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
+    }
+}
+
+header {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-header {
+    background: url(../images/320px/header/burg_menu.png) no-repeat;
+    width: 17px;
+    height: 12px;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.caption-header {
+    color: $base-color-second;
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-weight: 600;
+    padding-top: 24px;
+    text-align: center;
+    font-size: 18px;
+    width: 165px;
+    margin: 0 auto;
+    @media (min-width: 480px) {
+        font-size: 24px;
+        padding-top: 50px;
+        width: 245px;
+    }
+    @media (min-width:768px) {
+        font-size: 44.8px;
+        width: 350px;
+        margin: 0;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    @media (min-width: 960px) {
+        font-size: 56.08px;
+        width: 440px;
+        padding-top: 102px;
+        margin-bottom: 30px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 50px;
+        width: 390px;
+        margin-left: 100px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 60px;
+        width: 470px;
+        margin-left: 230px;
+    }
+}
+
+.main-text-header {
+    @media (min-width: 768px) {
+        width: 155px;
+        height: 165px;
+        position: absolute;
+        top: 80px;
+        right: 65px;
+    }
+    @media (min-width: 960px) {
+        width: 165px;
+        height: 200px;
+        top: 118px;
+        right: 80px;
+    }
+    @media (min-width: 1200px) {
+        width: 175px;
+        right: 136px;
+    }
+    @media (min-width: 1440px) {
+        right: 245px;
+    }
+}
+
+.main-text-header__slogan {
+    color: $base-color-second;
+    line-height: 1.35;
+    font-family: $main-font;
+    font-weight: 800;
+    max-width: 280px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 8px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    @media (min-width: 480px) {
+        font-size: 13.5px;
+        max-width: 400px;
+        text-align: left;
+    }
+    @media (min-width: 768px) {
+        font-size: 10px;
+        text-align: left;
+        margin-bottom: 10px;
+        line-height: 1.8;
+    }
+    @media (min-width: 960px) {
+        font-size: 9.8px;
+        line-height: 1.5;
+    }
+    @media (min-width: 1200px) {
+        font-size: 11.2px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 13.5px;
+    }
+}
+
+.main-text-header__quote {
+    color: $base-color-second;
+    line-height: 1.35;
+    font-family: $main-font;
+    font-weight: 600;
+    max-width: 280px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 8px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-right: auto;
+    @media (min-width: 480px) {
+        font-size: 13.5px;
+        max-width: 400px;
+        margin-bottom: 125px;
+    }
+    @media (min-width: 768px) {
+        font-size: 7.84px;
+        text-align: left;
+        margin: 0 0 30px 10px;
+        max-width: 185px;
+        line-height: 1.7;
+        padding: 0;
+    }
+    @media (min-width: 960px) {
+        font-size: 9.8px;
+        line-height: 1.5;
+        max-width: 220px;
+        margin-left: 20px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 8.7px;
+        max-width: 230px;
+        margin-left: 20px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 10.5px;
+        width: 197px;
+        margin-left: 20px;
+    }
+}
+
+.main-text-header__description {
+    color: #afb0b3;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 11.2px;
+    max-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 28.8px;
+    @media (min-width: 480px) {
+        font-size: 13px;
+        margin-bottom: 42px;
+        max-width: 400px;
+    }
+    @media (min-width:768px) {
+        font-size: 9px;
+    }
+    @media (min-width:768px) {
+        font-size: 11.2px;
+        line-height: 1.5;
+    }
+    @media (min-width:960px) {
+        font-size: 11.2px;
+    }
+    @media (min-width:1200px) {
+        font-size: 10px;
+    }
+    @media (min-width:1200px) {
+        font-size: 12px;
+        width: 140px;
+        margin: 0;
+    }
+}
+
+.background-logo {
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+}
+
+.button--position {
+    margin: 0 auto;
+    @media (min-width: 768px) {
+        margin: 0 0 35px 50px;
+    }
+    @media (min-width: 768px) {
+        margin: 0 0 30px 50px;
+    }
+    @media (min-width: 1200px) {
+        margin: 0 0 100px 150px;
+    }
+    @media (min-width: 1440px) {
+        margin: 0 0 20px 326px;
+    }
+}
+
+#svg {
+    display: none;
+}
+
+.social-webs {
+    display: none;
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        width: 35px;
+        height: 15px;
+        position: absolute;
+        bottom: 110px;
+        right: 65px;
+    }
+    @media (min-width:960px) {
+        right: 80px;
+        bottom: 155px;
+        width: 46px;
+        height: 15px;
+    }
+    @media (min-width:1200px) {
+        position: static;
+        align-self: flex-end;
+    }
+}
+
+.svg-size {
+    width: 11px;
+    height: 11px;
+}
+
+.page-numder {
+    @media (min-width: 768px) {
+        background: url(../images/320px/header/page-number.png);
+        width: 31px;
+        height: 41px;
+    }
+    @media (min-width:960px) {}
+}
+
+.header-bottom-path {
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.low-resolution {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.high-resolution-before {
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+        &::before {
+            content: "\2014      ";
+        }
+    }
+}
+
+.high-resolution-after {
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+        &::after {
+            content: "\2014";
+        }
+    }
+}
+
+.open-tag {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-left: 1px solid $accent-color;
+    border-bottom: 1px solid $accent-color;
+    background: none;
+    transform: rotate(45deg);
+    @media (min-width: 960px) {
+        height: 7px;
+        width: 7px;
+    }
+    @media (min-width: 1200px) {
+        height: 7px;
+        width: 7px;
+    }
+}
+
+.foo {
+    @media (min-width: 320px) {
+        width: 10px;
+        display: inline-flex;
+        padding-top: 38px;
+        margin-left: auto;
+    }
+    @media (min-width: 480px) {
+        padding-top: 48px;
+    }
+    @media (min-width: 768px) {
+        margin-left: 33px;
+        padding-top: 2px;
+    }
+    @media (min-width: 960px) {
+        margin-left: 23px;
+    }
+    @media (min-width: 1200px) {
+        margin-left: 120px;
+    }
+    @media (min-width: 1440px) {
+        margin-left: 300px;
+    }
+}
+
+.close-tag {
+    width: 15px;
+    height: 8px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-left: 10px;
+    @media (min-width: 960px) {
+        height: 11px;
+        margin-left: 30px;
+    }
+}
+
+.angle-wrap {
+    display: flex;
+    @media (min-width: 768px) {
+        max-width: 250px;
+    }
+    @media (min-width: 960px) {
+        max-width: 250px;
+    }
+    @media (min-width: 1200px) {
+        max-width: 350px;
+    }
+    @media (min-width: 1440px) {
+        max-width: 550px;
+    }
+}
+
+.slash {
+    display: inline-block;
+    width: 7px;
+    height: 8px;
+    border-right: 1px solid $accent-color;
+    transform: rotate(30deg);
+    @media (min-width: 960px) {
+        height: 11px;
+    }
+}
+
+.right-angle {
+    margin-left: 2px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-right: 1px solid $accent-color;
+    border-bottom: 1px solid $accent-color;
+    background: none;
+    transform: rotate(-45deg);
+    align-self: flex-end;
+    @media (min-width: 960px) {
+        width: 7px;
+        height: 7px;
+    }
+}

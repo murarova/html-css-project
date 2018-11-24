@@ -1,3 +1,58 @@
 .section-two {
-  text-align: center;
+  padding-top: 40px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 13px;
+}
+ul.section-two--color-marker{
+  color: $accent-color;
+}
+li .section-two--color-li{
+  color: $base-color-first;
+}
+.section-two__text-color{
+  color: $brand-color;
+}
+.section-two__slesh::before{
+  content: '/';
+  font-size: 26px;
+  position: absolute;
+  top: 8px;
+  left: -8px;
+}
+.section-two__title {
+  @extend %title;
+  @extend %uppercase;
+
+  &--center {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.section-two__sub-title--after {
+  padding-left: 20px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0.5em;
+    transform: translate(0, 50%);
+    left: 0px;
+    height: 2px;
+    width: 15px;
+    background: #000;
+  }
+  &:after {
+    content: "STAP";
+    position: absolute;
+    transform: rotate(90deg);
+    top: 40px;
+    left: -95px;
+    font-family: $main-font;
+    font-weight: 800;
+    font-size: 66.11px;
+    opacity: 0.05;
+  }
 }
