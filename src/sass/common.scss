@@ -7,3 +7,14 @@
     background: $accent-color;
     color: $base-color-first;
 }
+
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.flex {
+    display: flex;
+}

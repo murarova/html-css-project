@@ -1,8 +1,8 @@
 /*
    Import partials below
 */
-@import './normalize';
 @import './bootstrap-grid';
+@import './normalize';
 @import './helpers/variables';
 @import './helpers/mixins';
 @import './fonts';
@@ -11,4 +11,8 @@
 @import './common';
 @import './button';
 @import './section-one';
+@import './header';
+@import './common';
+@import './footer';
+
 
