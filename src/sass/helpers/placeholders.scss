@@ -4,14 +4,16 @@
     font-weight: 500;
     line-height: 17.1px;
 }
-
+%section-four-text {
+    font-size: 9px;
+    font-family: $main-font;
+}
 %sub-title {
     font-family: $main-font;
     font-size: 9.86px;
     font-weight: 800;
     line-height: 10.96px;
 }
-
 %uppercase {
     text-transform: uppercase;
 }
