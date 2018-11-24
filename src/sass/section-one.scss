@@ -1,0 +1,135 @@
+.section-one {
+    padding-top: 40px;
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+}
+
+.section-one__text {
+    padding-bottom: 20px;
+
+    &--accent {
+        color: $brand-color;
+        text-align: center;
+        padding: 20px 0 50px;
+    }
+
+    &--mark-text {
+        font-weight: 800;
+        padding-top: 20px;
+    }
+
+    &--before {
+        padding-left: 15px;
+        font-weight: 800;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left:0px;
+            height: 2px;
+            width: 15px;
+            background: #000;
+        }
+    }
+}
+
+.section-one__sub-title {
+    position: relative;
+    @extend %sub-title;
+    @extend %uppercase;
+    padding: 30px 0 5px;
+
+}
+
+.section-one__sub-title--after {
+    padding-left: 20px;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top:75%;
+        left:0px;
+        height: 2px;
+        width: 15px;
+        background: #000;
+    }
+
+    &:after {
+        content: 'YOU';
+        position: absolute;
+        transform: rotate(90deg);
+        bottom: -40px;
+        left: -95px;
+        font-family: $main-font;
+        font-weight: 800;
+        font-size: 66.11px;
+        opacity: 0.05;
+    }
+}
+
+.section-one__title {
+    @extend %title;
+    @extend %uppercase;
+
+    &--center {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+.list {
+    list-style-type: square;
+    padding: 10px 0 0 25px;
+}
+
+.list__item {
+    padding-bottom: 10px;
+
+    &--mark-text {
+        font-weight: 800;
+    }
+}
+
+.facts-item {
+    padding: 0 0 20px 10px;
+
+    &__title {
+        @extend %uppercase;
+        padding-bottom: 5px;
+        
+        &--accent {
+            font-size: 1.4em;
+        }
+        &--litle {
+            font-size: 0.7em;
+        }
+
+        &:before {
+            content: '';
+            height: 5px;
+            width: 5px;
+            background: $brand-color;
+            position: absolute;
+            left: 5px;
+            top: 3.5px;
+        }
+    }
+
+    &__desc {
+        font-weight: 800;
+        padding-bottom: 5px;
+    }
+}
+
+.section-one__img:last-child() {
+    padding-bottom: 30px;
+}
+
+
+
+
