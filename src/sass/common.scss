@@ -7,3 +7,15 @@
     background: #16ebfe;
     color: #000000;
 }
+
+
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.flex {
+    display: flex;
+}
