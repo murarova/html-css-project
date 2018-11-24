@@ -4,7 +4,12 @@
 @import './normalize';
 @import './bootstrap-grid';
 @import './helpers/variables';
+@import './helpers/mixins';
 @import './fonts';
+@import './base';
+@import './wrapper';
+@import './section-title';
+@import './helpers/placeholders';
 @import './button';
 @import './section-two'
 
