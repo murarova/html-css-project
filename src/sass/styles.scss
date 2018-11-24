@@ -1,16 +1,11 @@
 /*
    Import partials below
 */
-@import './bootstrap-grid';
 @import './normalize';
+@import './bootstrap-grid';
 @import './helpers/variables';
-@import './helpers/mixins';
+@import './helpers/placeholders.scss';
 @import './fonts';
-@import './base';
-@import './wrapper';
-@import './section-title';
-@import './helpers/placeholders';
 @import './button';
-@import './header';
-@import './common';
-
+@import './header.scss';
+@import './section-four/section-four.scss';
