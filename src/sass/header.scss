@@ -1,4 +1,4 @@
-.header-footer-wrapper {
+.header-wrapper {
     @media (min-width: 320px) {
         padding-left: 10px;
         padding-right: 10px;
@@ -24,7 +24,6 @@
         padding-right: 45px;
     }
 }
-
 .head-section {
     background: url(../images/320px/header/GoIt_bg.png) center no-repeat, radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
     background-size: 325px 90px, auto;
