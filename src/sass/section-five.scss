@@ -1,0 +1,330 @@
+.container--margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-five-caption {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 60px;
+    font-family: acrom;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $base-color-second;
+    margin-bottom: 17px;
+    @media (min-width: 480px) {
+        font-size: 18px;
+    }
+    @media (min-width: 768px) {
+        font-size: 26.92px;
+    }
+    @media (min-width: 960px) {
+        font-size: 33.65px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 30px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 36px;
+    }
+}
+
+.section-five-text {
+    font-family: acrom;
+    font-weight: 500;
+    color: $base-color-first;
+    font-size: 9px;
+    width: 160px;
+    margin: auto;
+    @media (min-width:480px) {
+        font-size: 13.5px;
+        width: 247px;
+    }
+}
+
+.big-tire {
+    display: block;
+    width: 13px;
+    height: 1px;
+    background: black;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.order-list1, .order-list2 {
+    position: absolute;
+    left: -40px;
+    font-size: 16.8px;
+    &::after {
+        display: block;
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: $accent-color;   
+    }
+}
+.section-five__item {
+    position: relative;
+    margin: 0 auto;
+    font-family: acrom;
+    font-weight: 800;
+    font-size: 8.96px;
+    text-transform: uppercase;
+    width: 197px;
+    margin-bottom: 15px;
+    
+}
+.margin {
+    margin-bottom: 45px;
+}
+.text {
+    margin: 0 auto;
+    display: block;
+    font-family: acrom;
+    font-weight: 500;
+    font-size: 7.84px;
+    width: 197px;
+    margin-bottom: 25px;
+
+}
+
+.form {
+    margin: auto;
+    width: 250px;
+    flex-direction: column;
+    padding-top: 38px;
+    box-shadow: 0 5px 5px 3px #dedede;
+    padding-left: 45px;
+    margin-bottom: 45px;
+
+    @media (min-width: 480px) {
+        width: 370px;
+    }
+}
+
+.form-text {
+    margin-bottom: 5px;
+    border: none;
+    font-family: acrom;
+    font-weight: 500;
+    font-size: 6.19px;
+    color: $base-color-first;
+    @media (min-width: 480px) {
+        font-size: 9.29px;
+    }
+    @media (min-width:768px) {
+        font-size: 7.85px;
+    }
+    @media (min-width:960px) {
+        font-size: 9.81px;
+    }
+    @media (min-width:1200px) {
+        font-size: 8.75px;
+    }
+    @media (min-width:1440px) {
+        font-size: 10.5px;
+    }
+}
+
+.form-name {
+    margin-bottom: 9px;
+    font-size: 5.31px;
+    font-family: acrom;
+    font-weight: 600;
+    color: #a3a3a3;
+    @media (min-width: 480px) {
+        font-size: 7.97px;
+    }
+    @media (min-width:768px) {
+        font-size: 6.73px;
+    }
+    @media (min-width:960px) {
+        font-size: 8.41px;
+    }
+    @media (min-width:1200px) {
+        font-size: 7.5px;
+    }
+    @media (min-width:1440px) {
+        font-size: 9px;
+    }
+}
+
+.line {
+    width: 100%;
+    margin-bottom: 15px;
+    &::after {
+        display: block;
+        content: "";
+        width: 160px;
+        height: 1px;
+        background: #f2f2f2;
+    }
+}
+
+input:valid {
+    color: green;
+}
+
+input:invalid {
+    color: red;
+}
+
+.button--form-button {
+    width: 116px;
+    height: 23px;
+    margin-bottom: 45px;
+    font-size: 5.31px;
+    @media (min-width: 480px) {
+        width: 175px;
+        height: 33px;
+        margin-bottom: 68px;
+        font-size: 7.97px;
+    }
+    @media (min-width:768px) {
+        width: 145px;
+        height: 30px;
+        margin-bottom: 57px;
+        font-size: 6.73px;
+    }
+    @media (min-width:960px) {
+        width: 180px;
+        height: 35px;
+        margin-bottom: 70px;
+        font-size: 8.41px;
+    }
+    @media (min-width:1200px) {
+        width: 160px;
+        height: 30px;
+        margin-bottom: 65px;
+        font-size: 7.5px;
+    }
+    @media (min-width:1440px) {
+        width: 200px;
+        height: 40px;
+        margin-bottom: 80px;
+        font-size: 9px;
+    }
+}
+
+.attention {
+    font-family: acrom;
+    font-weight: 800;
+    font-size: 12px;
+    color: $base-color-first;
+    text-transform: uppercase;
+    margin: auto;
+    margin-bottom: 18px;
+}
+.attention--box-sizing {
+    width: 123px;
+    height: 46px;
+    margin-bottom: 1px;
+}
+.defis {
+    
+    &::before {
+        display: inline-block;
+        content: "\2014";
+        padding-right: 3px;
+    }
+
+}
+
+.price {
+    margin: auto;
+    width: 285px;
+    height: 185px;
+    background: #052139;
+    color: $base-color-second;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.price__full {
+    font-family: acrom;
+    font-weight: 500;
+    font-size: 8.59px;
+    width: 60px;
+    line-height: 1.5;
+    
+}
+.price__sum1 {
+    font-family: acrom;
+    font-weight: 800;
+    font-size: 9.66px;
+    align-self: center;
+    &::before {
+        display: inline-block;
+        content: "";
+        width: 25px;
+        height: 2px;
+        background: #586b7b;
+        margin-bottom: 2px;
+        margin-right: 3px;
+    }
+}
+.price__today {
+    width: 60px;
+    font-family: acrom;
+    font-weight: 500;
+    font-size: 8.59px;
+    line-height: 1.5;
+}
+.price__sum2 {
+    font-family: acrom;
+    font-weight: 800;
+    font-size: 20px;
+}
+.price-group {
+    justify-content: space-between;
+    width: 150px;
+    height: 36px;
+}
+.price__description {
+    font-family: acrom;
+    font-weight: 600;
+    font-size: 9.58px;
+    width: 160px;
+    margin: auto;
+    margin-bottom: 13px;
+    width: 197px;
+}
+.accent {
+    color: $brand-color;
+    font-weight: 500;
+    width: 197px;
+}
+
+.button--sale399 {
+    width: 197px;
+    height: 27px;
+    font-family: acrom;
+    font-weight: 800;
+    font-size: 6.49px;
+    margin: auto;
+    margin-bottom: 55px;
+
+}
+.block {
+    font-family: acrom;
+    font-weight: 500;
+    font-size: 9px;
+    width: 160px;
+}
+.block--margin {
+    margin-bottom: 23px;
+}
+.wrap-video {
+    width: 145px;
+    margin: auto;
+}
+.take-video {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.accent--position {
+    text-align: right;
+    margin: auto;
+    font-size: 9px;
+}
