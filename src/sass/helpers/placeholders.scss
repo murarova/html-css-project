@@ -9,7 +9,6 @@
     line-height: 25.66px;
   }
 }
-
 %sub-title {
   font-family: $main-font;
   font-size: 9.86px;
@@ -21,7 +20,6 @@
     line-height: 16.43px;
   }
 }
-
 %uppercase {
   text-transform: uppercase;
 }
@@ -34,5 +32,11 @@
   background-image: url(../images/1440px/section-one/arrow@1X.png);
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+
+%section-four-text {
+    font-size: 9px;
+    font-family: $main-font;
 }
 

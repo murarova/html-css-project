@@ -5,11 +5,15 @@
 @import './normalize';
 @import './helpers/variables';
 @import './helpers/mixins';
-@import './helpers/placeholders';
+@import './helpers/placeholders.scss';
 @import './fonts';
 @import './base';
 @import './common';
 @import './button';
 @import './header';
-@import './section-one';
+
+@import './section-two';
+@import './section-four/section-four.scss';
+@import './section-five';
 @import './footer';
+
