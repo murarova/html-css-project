@@ -5,6 +5,13 @@
 .head-section-bg {
     background: radial-gradient(circle at center, #09213a, #161d2a), no-repeat;
     position: relative;
+    padding-top: 10px;
+    @media (min-width: 768px) {
+        padding-top: 21px;
+    }
+    @media (min-width: 960px) {
+        padding-top: 26px;
+    }
 }
 
 .head-section {
@@ -14,7 +21,6 @@
     height: 100vh;
     max-height: 450px;
     position: relative;
-    padding-top: 10px;
     margin: 0 auto;
     @media (min-width: 480px) {
         background: url(../images/480px/header/GoIt_bg_480.png) center no-repeat;
@@ -41,21 +47,28 @@
     }
 }
 
-.header {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    margin: 0 auto;
-    @media (min-width: 1200px) {
-        width: 155%;
-        left: -27%;
-    }
-}
-
 header {
     margin: 0;
     display: flex;
     justify-content: space-between;
+    margin-left: 4.68%;
+    margin-right: 4.68%;
+    @media (min-width: 768px) {
+        margin-left: 8.46%;
+        margin-right: 8.46%;
+    }
+    @media (min-width: 960px) {
+        margin-left: 8.33%;
+        margin-right: 8.33%;
+    }
+    @media (min-width: 1200px) {
+        margin-left: 3.33%;
+        margin-right: 3.33%;
+    }
+    @media (min-width: 1440px) {
+        margin-left: 2.7%;
+        margin-right: 2.7%;
+    }
 }
 
 .menu-header {
@@ -141,8 +154,7 @@ header {
     text-align: left;
     @media (min-width: 480px) {
         font-size: 13.5px;
-        max-width: 360px; 
-
+        max-width: 360px;
     }
     @media (min-width: 768px) {
         font-size: 10px;
@@ -168,26 +180,24 @@ header {
     font-weight: 600;
     font-size: inherit;
     max-width: 258px;
-
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
     @media (min-width: 480px) {
-        
         max-width: 300px;
     }
-    @media (min-width: 768px) {    
+    @media (min-width: 768px) {
         max-width: 185px;
         line-height: 1.7;
         padding: 0;
         text-align: left;
     }
-    @media (min-width: 960px) {   
+    @media (min-width: 960px) {
         line-height: 1.5;
-        max-width: 250px;    
+        max-width: 250px;
     }
-    @media (min-width: 1200px) {   
-        max-width: 230px;    
+    @media (min-width: 1200px) {
+        max-width: 230px;
     }
     @media (min-width: 1440px) {
         width: 197px;
@@ -224,7 +234,6 @@ header {
     }
     @media (min-width:1440px) {
         font-size: 12px;
-       
     }
 }
 
@@ -241,7 +250,6 @@ header {
     }
     @media (min-width: 960px) {
         margin: 0 0 50px 50px;
-
     }
     @media (min-width: 1200px) {
         margin: 0 0 0 75px;
@@ -276,24 +284,30 @@ header {
 
 .social-webs {
     display: none;
+    @media (min-width:1200px) {
+        display: flex;
+        position: static;
+        align-self: flex-end;
+    }
+}
+.social-webs-inside {
+    display: none;
     position: absolute;
     @media (min-width: 768px) {
         display: block;
         width: 45px;
         height: 15px;
-        position: absolute;
+        top: 270px;
         right: 0px;
-        bottom: 80px;
     }
     @media (min-width:960px) {
-        bottom: 130px;
+        top: 300px;
         width: 46px;
         height: 15px;
     }
     @media (min-width:1200px) {
-        display: flex;
-        position: static;
-        align-self: flex-end;
+        display: none;
+        
     }
 }
 
@@ -311,20 +325,27 @@ header {
 }
 
 .header-bottom-path-wrap {
-    position: absolute;
-    left: 0;
-    bottom: 30px;
     width: 100%;
-    @media (min-width: 1200px) {
-        width: 155%;
-        left: -27%;
-    }
+    position: absolute;
+    bottom: 20px;
+   
 }
 
 .header-bottom-path {
+    position: static;
+    @media (min-width: 960px) {
+        
+        margin-left: 8.33%;
+    }
     @media (min-width: 1200px) {
         display: flex;
         justify-content: space-between;
+        margin-left: 3.33%;
+        margin-right: 3.33%;
+    }
+    @media (min-width: 1440px) {
+        margin-left: 2.7%;
+        margin-right: 2.7%;
     }
 }
 
@@ -367,7 +388,7 @@ header {
 .close-tag {
     &::before {
         display: inline-block;
-        content: "/>";
+        content: "/ >";
         color: $accent-color;
         position: absolute;
         bottom: 0;
@@ -389,19 +410,16 @@ header {
     }
     @media (min-width: 768px) {
         font-size: 7.84px;
-        
         margin: 0 0 30px 10px;
-        max-width: 235px; 
+        max-width: 235px;
         padding: 0;
     }
     @media (min-width: 960px) {
         font-size: 9.8px;
         max-width: 300px;
-        
     }
     @media (min-width: 1200px) {
         font-size: 10.5px;
         max-width: 330px;
-        
     }
 }
