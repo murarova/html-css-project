@@ -1,51 +1,61 @@
 .black-bg-text {
-    background: $base-color-first;
-    color: $base-color-second;
-    
-}
-.blue-bg-text {
-    background: $accent-color;
-    color: $base-color-first;
+  background: $base-color-first;
+  color: $base-color-second;
 }
 
-ul,li {
-    list-style: none;
+.blue-bg-text {
+  background: $accent-color;
+  color: $base-color-first;
 }
+
+ul,
+li {
+  list-style: none;
+}
+
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
+
 .flex {
-    display: flex;
+  display: flex;
 }
 
 /*MARGINS*/
 
 .mt-15 {
-    margin-top: 1.7em;
-}
-.mb-5 {
-    margin-bottom: 0.6em;
-}
-.mb-10 {
-    margin-bottom: 0.9em;
-}
-.mb-15 {
-    margin-bottom: 1.7em;
-}
-.mb-20 {
-    margin-bottom: 2.2em;
-}
-.mb-25 {
-    margin-bottom: 2.8em;
-}
-.mb-30 {
-    margin-bottom: 3.33em;
-}
-.mb-35 {
-    margin-bottom: 3.9em;
-}
-.mb-45 {
-    margin-bottom: 5em;
+  margin-top: 1.7em;
 }
 
+.mb-5 {
+  margin-bottom: 0.6em;
+}
+
+.mb-10 {
+  margin-bottom: 0.9em;
+}
+
+.mb-15 {
+  margin-bottom: 1.7em;
+}
+
+.mb-20 {
+  margin-bottom: 2.2em;
+}
+
+.mb-25 {
+  margin-bottom: 2.8em;
+}
+
+.mb-30 {
+  margin-bottom: 3.33em;
+}
+
+.mb-35 {
+  margin-bottom: 3.9em;
+}
+
+.mb-45 {
+  margin-bottom: 5em;
+}
