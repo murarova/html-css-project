@@ -215,7 +215,9 @@
         width: 230px;
     }
 }
-
+input {
+    outline: none;
+}
 .form {
     flex-direction: column;
     padding-top: 38px;
