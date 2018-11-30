@@ -857,7 +857,7 @@
     &::after {
         content: url(../../images/320px/section-four/section-four-2-320.jpg);
         display: block;
-        margin-left: -97px;
+        margin-left: -100px;
         margin-top: 25px;
         @media (min-width: 480px) {
             content: url(../../images/480px/section-four/four_3_480.jpg);
@@ -1052,9 +1052,9 @@
         width: 130px;
     }
 }
-.price {
+.course-components-price {
     display: flex;
-    margin: 40px auto;
+    margin-top: 40px;
     width: 195px;
     justify-content: space-between;
     @media (min-width: 480px) {
@@ -1075,20 +1075,20 @@
         margin-left: 150px;
     }
 }
-.price-numbers {
+.course-components-price-numbers {
     display: flex;
     flex-direction: column;
     @media (min-width: 960px) {
         width: 100px;
     }
 }
-.price-text {
+.course-components-price-text {
     padding-left: 5px;
     @media (min-width: 960px) {
         width: 120px;
     }
 }
-.price-text__span, .old-price {
+.price-text__span, .course-components-old-price {
     font-family: $main-font;
     font-size: 11.31px;
     @media (min-width: 480px) {
@@ -1120,16 +1120,16 @@
         line-height: 1;
     }
 }
-.old-price, .new-price {
+.course-components-old-price, .course-components-new-price {
     font-weight: 800;
 }
-.old-price {
+.course-components-old-price {
     text-decoration: line-through;
     @media (min-width: 768px) {
         margin-top: 7px;
     }
 }
-.new-price {
+.course-components-new-price {
     font-family: $main-font;
     font-size: 24.24px;
     @media (min-width: 480px) {
@@ -1148,7 +1148,7 @@
         font-size: 22.5px;
     }
 }
-.little-text {
+.course-components-little-text {
     font-size: 15px;
     @media (min-width: 480px) {
         font-size: 19.39px;
