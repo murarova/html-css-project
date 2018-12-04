@@ -220,10 +220,10 @@
 }
 
 .copyright-logo {
+    align-self: center;
     width: 9px;
     height: 5px;
     background: url(../images/320px/footer/copyright.png) no-repeat;
-    margin: auto 0;
     @media (min-width: 480px) {
         width: 14px;
         height: 8px;
