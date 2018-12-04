@@ -183,6 +183,7 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
+    padding-top: 10px;
     @media (min-width: 480px) {
         max-width: 300px;
     }
@@ -316,8 +317,11 @@ header {
     height: 11px;
 }
 
-.page-numder {
+
+.page-number {
+    display: none;
     @media (min-width: 768px) {
+        display: block;
         background: url(../images/320px/header/page-number.png);
         width: 31px;
         height: 41px;
@@ -333,7 +337,7 @@ header {
 
 .header-bottom-path {
     position: static;
-    @media (min-width: 960px) {
+    @media (min-width: 768px) {
         
         margin-left: 8.33%;
     }
