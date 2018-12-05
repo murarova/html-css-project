@@ -1,58 +1,75 @@
 .section-two {
-  padding-top: 40px;
   font-family: $main-font;
   font-weight: 500;
   font-size: 9px;
   line-height: 13px;
+
+  @media (min-width: 480px) {
+    font-size: 13.5px;
+    line-height: 19.5px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 8.97px;
+    line-height: 13.46px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 9.81px;
+    line-height: 14.72px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 10.5px;
+    line-height: 15.75px;
+  }
 }
-ul.section-two--color-marker{
-  color: $accent-color;
-}
-li .section-two--color-li{
-  color: $base-color-first;
-}
-.section-two__text-color{
-  color: $brand-color;
-}
-.section-two__slesh::before{
-  content: '/';
-  font-size: 26px;
-  position: absolute;
-  top: 8px;
-  left: -8px;
-}
-.section-two__title {
+
+.warning-section__title,
+.many-people-section__title,
+.career-section__title {
   @extend %title;
   @extend %uppercase;
 
-  &--center {
-    text-align: center;
-    padding-bottom: 20px;
+  @media (min-width: 960px) {
+    font-size: 33.64px;
+    line-height: 42.06px;
   }
 }
 
-.section-two__sub-title--after {
-  padding-left: 20px;
-
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: 0.5em;
-    transform: translate(0, 50%);
-    left: 0px;
-    height: 2px;
-    width: 15px;
-    background: #000;
-  }
-  &:after {
-    content: "STAP";
-    position: absolute;
-    transform: rotate(90deg);
-    top: 40px;
-    left: -95px;
-    font-family: $main-font;
-    font-weight: 800;
-    font-size: 66.11px;
-    opacity: 0.05;
-  }
+.warning-section-list__list-item {
+  list-style: square;
+  padding-bottom: 0.9em;
+  color: $base-color-third;
 }
+
+.warning-section-list__list-item--title,
+.career-section__list-item  {
+  @extend %uppercase;
+  font-size: 9px;
+  font-weight: 800;
+  color: #000;
+}
+
+.many-people-section__foto {
+  display: block;
+}
+
+.many-people-section__title--black {
+  @extend %uppercase;
+  line-height: 13px;
+  font-size: 9px;
+  display: block;
+}
+
+.career-section__foto {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.career-section__list-item {
+  list-style: square;
+}
+
