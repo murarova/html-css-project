@@ -40,3 +40,10 @@
     font-family: $main-font;
 }
 
+%dash {
+  content: '-';
+  position: absolute;
+  font-size: 20px;
+  left: -1em;
+}
+
