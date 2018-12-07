@@ -9,6 +9,7 @@
     line-height: 25.66px;
   }
 }
+
 %sub-title {
   font-family: $main-font;
   font-size: 9.86px;
@@ -20,6 +21,7 @@
     line-height: 16.43px;
   }
 }
+
 %uppercase {
   text-transform: uppercase;
 }
@@ -34,16 +36,15 @@
   background-repeat: no-repeat;
 }
 
-
 %section-four-text {
-    font-size: 9px;
-    font-family: $main-font;
+  font-size: 9px;
+  font-family: $main-font;
 }
 
 %dash {
-  content: '-';
+  content: "\2014";
+  font-size: 40px;
   position: absolute;
-  font-size: 20px;
-  left: -1em;
+  left: -0.8em;
+  top: -0.1em;
 }
-

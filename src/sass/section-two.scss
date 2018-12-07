@@ -25,9 +25,14 @@
   }
 }
 
+.warning-section {
+  padding-top: 10em;
+}
+
 .warning-section__title,
 .many-people-section__title,
-.career-section__title {
+.career-section__title,
+.steps-section__title {
   @extend %title;
   @extend %uppercase;
 
@@ -37,10 +42,25 @@
   }
 }
 
+.warning-section__photo {
+  width: 173px;
+  height: 412px;
+}
+
+.warning-section__text {
+  @media(min-width: 768px) {
+    width: 50%;
+  }
+}
+
 .warning-section-list__list-item {
   list-style: square;
   padding-bottom: 0.9em;
   color: $base-color-third;
+  
+  @media(min-width: 768px) {
+    width: 70%;
+  }
 }
 
 .warning-section-list__list-item--title,
@@ -49,14 +69,46 @@
   font-size: 9px;
   font-weight: 800;
   color: #000;
+
+  @media(min-width: 480px) {
+    font-size: 13.5px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 8.97px;
+  }
 }
 
 .many-people-section__foto {
   display: block;
+  width: 446px;
+  height: 210px;
+  
+  @media(min-width: 768px) {
+    width: 274px;
+    height: 169px;
+  }
 }
 
 .many-people-section__title {
-  width: 60%;
+  width: 75%;
+}
+
+.many-people-section__text {
+  @media(min-width: 768px) {
+    width: 60%;
+  }
+}
+
+.many-people-section__text,
+.career-section__text,
+.steps-section__text,
+.warning-section__text {
+  position: relative;
+
+  &::before {
+    @extend %dash;
+  }
 }
 
 .many-people-section__title--black {
@@ -64,14 +116,29 @@
   line-height: 13px;
   font-size: 9px;
   display: block;
+  width: 70%;
+  
+  @media(min-width: 480px) {
+    font-size: 13.5px;
+    line-height: 19.5px;
+  }
+  @media(min-width: 768px) {
+    line-height: 13px;
+    font-size: 9px;
+  }
+
 }
 
 .career-section__foto {
   display: block;
-  height: 100%;
-  width: 100%;
   text-align: center;
+
+  @media(min-width: 768px) {
+    height: 216px;
+    width: 267px;
+  }
 }
+
 
 .career-section__list-item {
   list-style: square;
@@ -105,16 +172,25 @@
   }
 }
 
+.steps-section__text {
+  font-weight: 500;
+}
+
+.steps-section__list-text {
+  @extend %uppercase;
+}
+
 .steps-section__text--accent {
   color: $brand-color;
   position: relative;
+  font-weight: 600;
 
   &::before {
     color: black;
     content: '/';
     font-size: 3em;
     position: absolute;
-    left: -0.5em;
+    left: -0.7em;
     top: 0.3em;
   }
 }
