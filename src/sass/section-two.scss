@@ -69,7 +69,7 @@
   height: 412px;
   position: relative;
 
-  @media(min-width:1440px) {
+  @media (min-width: 1440px) {
     width: 231px;
     height: 551px;
 
@@ -77,10 +77,10 @@
       font-size: 187.5px;
       top: 250px;
       right: -270px;
-    } 
+    }
   }
 
-  @media(min-width:960px) {
+  @media (min-width: 960px) {
     width: 215px;
     height: 515px;
 
@@ -88,12 +88,12 @@
       font-size: 175.3px;
       top: 230px;
       right: -260px;
-    } 
+    }
   }
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     &:after {
-      content: 'HARD';
+      content: "HARD";
       font-size: 140.24px;
       font-weight: 800;
       transform: rotate(90deg);
@@ -106,9 +106,8 @@
   }
 }
 
-
 .warning-section__text {
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 50%;
   }
 }
@@ -119,7 +118,7 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     width: 5px;
     height: 5px;
     background: #000;
@@ -127,20 +126,20 @@
     top: 0.5em;
     left: -1.5em;
 
-    @media(min-width: 480px) {
+    @media (min-width: 480px) {
       width: 7px;
       height: 7px;
       top: 0.4em;
     }
 
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
       width: 5px;
       height: 5px;
       top: 0.5em;
       left: -2em;
     }
 
-    @media(min-width: 960px) {
+    @media (min-width: 960px) {
       width: 7px;
       height: 7px;
       top: 0.4em;
@@ -148,31 +147,36 @@
     }
   }
 
-  @media(min-width: 960px) {
+  @media (min-width: 960px) {
     width: 100%;
     padding-bottom: 3em;
   }
-  
-  @media(min-width: 768px) {
+
+  @media (min-width: 768px) {
     width: 70%;
   }
 }
 
+.warning-section-list__list-item--text,
+.career-section__list-item-text,
+.steps-section__list-text--color {
+  color: $base-color-third;
+}
+
 .warning-section-list__list-item--title,
 .career-section__list-item,
-.steps-section__list-text
-  {
+.steps-section__list-text {
   @extend %uppercase;
   font-size: 9px;
   font-weight: 800;
   color: #000;
 
-  @media(min-width: 1200px) {
+  @media (min-width: 1200px) {
     font-size: 10px;
     line-height: 16.25px;
   }
 
-  @media(min-width: 480px) {
+  @media (min-width: 480px) {
     font-size: 13.5px;
   }
 
@@ -186,7 +190,7 @@
 }
 
 .many-people-section {
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     padding: 4em 0;
   }
 }
@@ -196,8 +200,7 @@
 }
 
 .many-people-padding {
-  
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     padding-bottom: 5em;
   }
 }
@@ -206,35 +209,36 @@
   display: block;
   margin: 0 auto 0.9em;
 
-  @media(min-width: 1440px) {
+  @media (min-width: 1440px) {
     width: 366px;
     height: 266px;
   }
 
-  @media(min-width: 960px) {
+  @media (min-width: 960px) {
     width: 342px;
     height: 212px;
   }
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 286px;
     height: 182px;
   }
 }
+
 .many-people-section__foto {
   display: block;
 
-  @media(min-width: 1440px) {
+  @media (min-width: 1440px) {
     width: 367px;
     height: 301px;
   }
 
-  @media(min-width: 960px) {
+  @media (min-width: 960px) {
     width: 342px;
     height: 285px;
   }
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 274px;
     height: 225px;
   }
@@ -243,29 +247,32 @@
 .many-people-section__title {
   width: 80%;
 
-  @media(min-width: 960px) {
+  @media (min-width: 960px) {
     width: 90%;
   }
 }
 
 .many-people-section__text {
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     width: 60%;
   }
 }
 
 .many-people-section__text-padding {
+  color: $base-color-third;
 
-  @media(min-width: 1200px) {
+  @media (min-width: 960px) {
     padding-bottom: 5em;
   }
 }
 
 .many-people-section__text,
-.career-section__text,
 .steps-section__text,
 .warning-section__text {
   position: relative;
+  font-size: 11.22px;
+  line-height: 16.82px;
+  font-weight: 600;
 
   &::before {
     @extend %dash;
@@ -279,23 +286,23 @@
   display: block;
   width: 70%;
 
-  @media(min-width: 960px) {
+  @media (min-width: 960px) {
     font-size: 11.22px;
     line-height: 18.23px;
   }
-  
-  @media(min-width: 480px) {
+
+  @media (min-width: 480px) {
     font-size: 13.5px;
     line-height: 19.5px;
   }
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     line-height: 13px;
     font-size: 9px;
   }
 }
 
 .career-section {
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     padding: 4em 0;
   }
 }
@@ -306,80 +313,79 @@
   width: 182px;
   height: 145px;
 
-  @media(min-width: 1440px) {
+  @media (min-width: 1440px) {
     height: 286px;
     width: 357px;
   }
 
-  @media(min-width: 480px) {
+  @media (min-width: 480px) {
     height: 217px;
     width: 272px;
   }
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     height: 216px;
     width: 267px;
   }
 }
+
 .career-section__foto {
   display: block;
   width: 279px;
   height: 129px;
 
-  @media(min-width:1440px) {
+  @media (min-width: 1440px) {
     width: 418px;
     height: 241px;
   }
 
-  @media(min-width:1200px) {
+  @media (min-width: 1200px) {
     width: 348px;
     height: 201px;
   }
 
-  @media(min-width:960px) {
+  @media (min-width: 960px) {
     width: 391px;
     height: 226px;
   }
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     height: 182px;
     width: 315px;
   }
 
-  @media(min-width:480px) {
+  @media (min-width: 480px) {
     width: 448px;
     height: 197px;
   }
-
-
 }
 
 .steps-section__title {
-  @media(min-width: 768px) {
-	&:after {
-		content: '4';
-		font-size: 298.8px;
-		font-weight: 800;
-		position: absolute;
-		top: 80px;
-		right: -30px;
-		color: #f5f5f5;
-		z-index: -1;
-	  }
+  @media (min-width: 768px) {
+    &:after {
+      content: "4";
+      font-size: 298.8px;
+      font-weight: 800;
+      position: absolute;
+      top: 80px;
+      right: -30px;
+      color: #f5f5f5;
+      z-index: -1;
+    }
 
-	  &::before {
-		content: 'STEP';
-		font-size: 81.06px;
-		font-weight: 800;
-		transform: rotate(90deg);
-		position: absolute;
-		top: 80px;
-		right: -140px;
-		color: #f5f5f5;
-		z-index: -1;
-	  }
+    &::before {
+      content: "STEP";
+      font-size: 81.06px;
+      font-weight: 800;
+      transform: rotate(90deg);
+      position: absolute;
+      top: 80px;
+      right: -140px;
+      color: #f5f5f5;
+      z-index: -1;
+    }
   }
-  @media(min-width: 960px) {
+  @media (min-width: 960px) {
     &::after {
       font-size: 373.51px;
       right: -10px;
@@ -391,13 +397,12 @@
   }
 }
 
-
 .career-section__list-item {
   position: relative;
-  
+
   &::after {
     display: block;
-    content: '';
+    content: "";
     width: 5px;
     height: 5px;
     background: #000;
@@ -406,8 +411,7 @@
     left: -1em;
   }
 
-  @media (min-width:960px) {
-    
+  @media (min-width: 960px) {
     &::after {
       top: -2em;
       left: 0;
@@ -418,13 +422,79 @@
 }
 
 .steps-section {
-  @media(min-width: 768px) {
+  @media (min-width: 320px) {
     padding: 4em 0;
+  }
+
+  @media (min-width: 768px) {
+    padding: 4em 0 8em;
   }
 }
 
 .steps-section__list {
   counter-reset: item;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 200px;
+    width: 10px;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    top: -1em;
+    left: -3.15em;
+
+    @media (min-width: 480px) {
+      left: -2em;
+      height: 300px;
+    }
+
+    @media (min-width: 768px) {
+      left: -3.1em;
+      height: 200px;
+    }
+
+    @media (min-width: 960px) {
+      left: -3.6em;
+    }
+
+    @media (min-width: 1200px) {
+      left: -3.3em
+    }
+
+    @media (min-width: 1440px) {
+      left: -3.6em;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 200px;
+    width: 10px;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    top: -1em;
+    left: 18em;
+
+    @media(min-width: 768px) {
+      left: 12.2em;
+    }
+
+    @media(min-width: 960px) {
+      left: 17.3em;
+    }
+
+    @media (min-width: 1200px) {
+      left: 15.6em
+    }
+
+    @media(min-width: 1440px) {
+      left: 17.3em;
+    }
+  }
 }
 
 .steps-section__list-item {
@@ -432,18 +502,28 @@
   padding-right: 30px;
 
   &:nth-child(2n) {
-    padding-right: 0; 
+    padding-right: 0;
   }
-  
+
   &::before {
-    content: '0' counter(item) '.';
+    content: "0" counter(item) ".";
     counter-increment: item;
     position: absolute;
     left: -2em;
-    font-size: 16.8px;
+    font-size: 16.7px;
     font-weight: 800;
-    width: 17px;
-    height: 20px;
+
+    @media (min-width: 960px) {
+      font-size: 21.03px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 18.75px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 22.5px;
+    }
   }
 
   &::after {
@@ -454,18 +534,44 @@
     background: $accent-color;
     position: absolute;
     left: -2em;
-    top: 1.6em;
+    top: 1.7em;
+
+    @media (min-width: 480px) {
+      left: -1.5em;
+    }
+
+    @media (min-width: 768px) {
+      left: -2em;
+      top: 1.9em;
+    }
+    @media (min-width: 960px) {
+      top: 1.9em;
+    }
   }
 }
 
 .career-section__text {
+  position: relative;
+  font-size: 11.22px;
+  line-height: 16.82px;
+  font-weight: 600;
+
+  &::before {
+    content: "\2014";
+    font-size: 25px;
+    position: absolute;
+    left: -1em;
+    top: -0.05em;
+  }
+
   @media (min-width: 768px) {
     margin-bottom: 5em;
-  }
-}
+    padding-left: 30px;
 
-.steps-section__text {
-  font-weight: 500;
+    &::before {
+    left: 0.1em;
+    }
+  }
 }
 
 .steps-section__text--accent {
@@ -475,7 +581,7 @@
 
   &::before {
     color: black;
-    content: '/';
+    content: "/";
     font-size: 3em;
     position: absolute;
     left: -0.7em;
