@@ -806,22 +806,24 @@
       width: 5px;
       height: 5px;
       background: $base-color-first;
-      top: 3px;
+      top: 2px;
       left: -10px;
+      @media (min-width: 480px) {
+        top: 4px;
+        left: -15px;
+      }
       @media (min-width: 768px) {
+        top: 2px;
+        left: -17px;
+      }
+      @media (min-width: 960px) {
         width: 7px;
         height: 7px;
         top: 2px;
-        left: -15px;
-      }
-      @media (min-width: 968px) {
-        top: 3px;
         left: -17px;
       }
       @media (min-width: 1200px) {
-        width: 8px;
-        height: 8px;
-        top: 2px;
+        top: 4px;
         left: -20px;
       }
       @media (min-width: 1440px) {
