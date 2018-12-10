@@ -1,58 +1,484 @@
 .section-two {
-  padding-top: 40px;
   font-family: $main-font;
   font-weight: 500;
   font-size: 9px;
   line-height: 13px;
+
+  @media (min-width: 480px) {
+    font-size: 13.5px;
+    line-height: 19.5px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 8.97px;
+    line-height: 13.46px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 9.81px;
+    line-height: 14.72px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 10.5px;
+    line-height: 15.75px;
+  }
 }
-ul.section-two--color-marker{
-  color: $accent-color;
+
+.warning-section {
+  padding-top: 5em;
+
+  @media (min-width: 1200px) {
+    padding-top: 10em;
+  }
+
+  @media (min-width: 768px) {
+    padding: 10em 0 4em;
+  }
 }
-li .section-two--color-li{
-  color: $base-color-first;
+
+.warning-section-list {
+  padding-top: 2em;
 }
-.section-two__text-color{
-  color: $brand-color;
-}
-.section-two__slesh::before{
-  content: '/';
-  font-size: 26px;
-  position: absolute;
-  top: 8px;
-  left: -8px;
-}
-.section-two__title {
+
+.warning-section__title,
+.many-people-section__title,
+.career-section__title,
+.steps-section__title {
   @extend %title;
   @extend %uppercase;
 
-  &--center {
-    text-align: center;
-    padding-bottom: 20px;
+  @media (min-width: 1440px) {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 37.5px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 33.64px;
+    line-height: 42.06px;
   }
 }
 
-.section-two__sub-title--after {
-  padding-left: 20px;
+.warning-section__photo {
+  width: 173px;
+  height: 412px;
+  position: relative;
 
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: 0.5em;
-    transform: translate(0, 50%);
-    left: 0px;
-    height: 2px;
-    width: 15px;
-    background: #000;
+  @media(min-width:1440px) {
+    width: 231px;
+    height: 551px;
+
+    &::after {
+      font-size: 187.5px;
+      top: 250px;
+      right: -270px;
+    } 
   }
-  &:after {
-    content: "STAP";
+
+  @media(min-width:960px) {
+    width: 215px;
+    height: 515px;
+
+    &::after {
+      font-size: 175.3px;
+      top: 230px;
+      right: -260px;
+    } 
+  }
+
+  @media(min-width: 768px) {
+    &:after {
+      content: 'HARD';
+      font-size: 140.24px;
+      font-weight: 800;
+      transform: rotate(90deg);
+      position: absolute;
+      top: 190px;
+      right: -200px;
+      color: #f5f5f5;
+      z-index: -1;
+    }
+  }
+}
+
+
+.warning-section__text {
+  @media(min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.warning-section-list__list-item {
+  padding-bottom: 0.9em;
+  color: $base-color-third;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #000;
     position: absolute;
-    transform: rotate(90deg);
-    top: 40px;
-    left: -95px;
-    font-family: $main-font;
+    top: 0.5em;
+    left: -1.5em;
+
+    @media(min-width: 480px) {
+      width: 7px;
+      height: 7px;
+      top: 0.4em;
+    }
+
+    @media(min-width: 768px) {
+      width: 5px;
+      height: 5px;
+      top: 0.5em;
+      left: -2em;
+    }
+
+    @media(min-width: 960px) {
+      width: 7px;
+      height: 7px;
+      top: 0.4em;
+      left: -3em;
+    }
+  }
+
+  @media(min-width: 960px) {
+    width: 100%;
+    padding-bottom: 3em;
+  }
+  
+  @media(min-width: 768px) {
+    width: 70%;
+  }
+}
+
+.warning-section-list__list-item--title,
+.career-section__list-item,
+.steps-section__list-text
+  {
+  @extend %uppercase;
+  font-size: 9px;
+  font-weight: 800;
+  color: #000;
+
+  @media(min-width: 1200px) {
+    font-size: 10px;
+    line-height: 16.25px;
+  }
+
+  @media(min-width: 480px) {
+    font-size: 13.5px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 8.97px;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 11.22px;
+  }
+}
+
+.many-people-section {
+  @media(min-width: 768px) {
+    padding: 4em 0;
+  }
+}
+
+.many-people-section__text--bold {
+  font-weight: 800;
+}
+
+.many-people-padding {
+  
+  @media(min-width: 768px) {
+    padding-bottom: 5em;
+  }
+}
+
+.many-people-section__first-foto {
+  display: block;
+  margin: 0 auto 0.9em;
+
+  @media(min-width: 1440px) {
+    width: 366px;
+    height: 266px;
+  }
+
+  @media(min-width: 960px) {
+    width: 342px;
+    height: 212px;
+  }
+
+  @media(min-width: 768px) {
+    width: 286px;
+    height: 182px;
+  }
+}
+.many-people-section__foto {
+  display: block;
+
+  @media(min-width: 1440px) {
+    width: 367px;
+    height: 301px;
+  }
+
+  @media(min-width: 960px) {
+    width: 342px;
+    height: 285px;
+  }
+
+  @media(min-width: 768px) {
+    width: 274px;
+    height: 225px;
+  }
+}
+
+.many-people-section__title {
+  width: 80%;
+
+  @media(min-width: 960px) {
+    width: 90%;
+  }
+}
+
+.many-people-section__text {
+  @media(min-width: 768px) {
+    width: 60%;
+  }
+}
+
+.many-people-section__text-padding {
+
+  @media(min-width: 1200px) {
+    padding-bottom: 5em;
+  }
+}
+
+.many-people-section__text,
+.career-section__text,
+.steps-section__text,
+.warning-section__text {
+  position: relative;
+
+  &::before {
+    @extend %dash;
+  }
+}
+
+.many-people-section__title--black {
+  @extend %uppercase;
+  line-height: 13px;
+  font-size: 9px;
+  display: block;
+  width: 70%;
+
+  @media(min-width: 960px) {
+    font-size: 11.22px;
+    line-height: 18.23px;
+  }
+  
+  @media(min-width: 480px) {
+    font-size: 13.5px;
+    line-height: 19.5px;
+  }
+  @media(min-width: 768px) {
+    line-height: 13px;
+    font-size: 9px;
+  }
+}
+
+.career-section {
+  @media(min-width: 768px) {
+    padding: 4em 0;
+  }
+}
+
+.career-section__foto-first {
+  display: block;
+  margin: 0 auto 2em;
+  width: 182px;
+  height: 145px;
+
+  @media(min-width: 1440px) {
+    height: 286px;
+    width: 357px;
+  }
+
+  @media(min-width: 480px) {
+    height: 217px;
+    width: 272px;
+  }
+
+  @media(min-width: 768px) {
+    height: 216px;
+    width: 267px;
+  }
+}
+.career-section__foto {
+  display: block;
+  width: 279px;
+  height: 129px;
+
+  @media(min-width:1440px) {
+    width: 418px;
+    height: 241px;
+  }
+
+  @media(min-width:1200px) {
+    width: 348px;
+    height: 201px;
+  }
+
+  @media(min-width:960px) {
+    width: 391px;
+    height: 226px;
+  }
+
+  @media(min-width: 768px) {
+    height: 182px;
+    width: 315px;
+  }
+
+  @media(min-width:480px) {
+    width: 448px;
+    height: 197px;
+  }
+
+
+}
+
+.steps-section__title {
+  @media(min-width: 768px) {
+	&:after {
+		content: '4';
+		font-size: 298.8px;
+		font-weight: 800;
+		position: absolute;
+		top: 80px;
+		right: -30px;
+		color: #f5f5f5;
+		z-index: -1;
+	  }
+
+	  &::before {
+		content: 'STEP';
+		font-size: 81.06px;
+		font-weight: 800;
+		transform: rotate(90deg);
+		position: absolute;
+		top: 80px;
+		right: -140px;
+		color: #f5f5f5;
+		z-index: -1;
+	  }
+  }
+  @media(min-width: 960px) {
+    &::after {
+      font-size: 373.51px;
+      right: -10px;
+    }
+    &::before {
+      font-size: 101.33px;
+      right: -150px;
+    }
+  }
+}
+
+
+.career-section__list-item {
+  position: relative;
+  
+  &::after {
+    display: block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    top: 0.4em;
+    left: -1em;
+  }
+
+  @media (min-width:960px) {
+    
+    &::after {
+      top: -2em;
+      left: 0;
+      width: 7px;
+      height: 7px;
+    }
+  }
+}
+
+.steps-section {
+  @media(min-width: 768px) {
+    padding: 4em 0;
+  }
+}
+
+.steps-section__list {
+  counter-reset: item;
+}
+
+.steps-section__list-item {
+  position: relative;
+  padding-right: 30px;
+
+  &:nth-child(2n) {
+    padding-right: 0; 
+  }
+  
+  &::before {
+    content: '0' counter(item) '.';
+    counter-increment: item;
+    position: absolute;
+    left: -2em;
+    font-size: 16.8px;
     font-weight: 800;
-    font-size: 66.11px;
-    opacity: 0.05;
+    width: 17px;
+    height: 20px;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: $accent-color;
+    position: absolute;
+    left: -2em;
+    top: 1.6em;
+  }
+}
+
+.career-section__text {
+  @media (min-width: 768px) {
+    margin-bottom: 5em;
+  }
+}
+
+.steps-section__text {
+  font-weight: 500;
+}
+
+.steps-section__text--accent {
+  color: $brand-color;
+  position: relative;
+  font-weight: 600;
+
+  &::before {
+    color: black;
+    content: '/';
+    font-size: 3em;
+    position: absolute;
+    left: -0.7em;
+    top: 0.3em;
   }
 }
