@@ -231,7 +231,7 @@
     margin-left: 88px;
     @media (min-width: 480px) {
         font-size: 13.5px;
-        margin-left: 130px;
+        margin-left: 120px;
     }
     @media (min-width: 768px) {
         margin-left: 35px;
@@ -252,6 +252,8 @@
     margin-top: 36px;
     margin-left: 37px;
     line-height: 1.5;
+    padding: 0;
+    max-width: 250px;
     margin-bottom: 18px;
     @extend %uppercase;
     @extend %section-four-text;
@@ -262,6 +264,7 @@
         margin-left: 56px;
         margin-top: 49px;
         margin-bottom: 23px;
+        max-width: 370px;
     }
     @media (min-width: 768px) {
         font-size: 13.46px;
@@ -741,6 +744,7 @@
     margin-bottom: 25px;
     @media (min-width: 480px){
         margin-top: 10px;
+        width: 190px;
         margin-left: 25px;
     }
     @media (min-width: 768px) {
@@ -802,6 +806,7 @@
     }
 }
 .what-is-course-wrapper {
+    padding: 0;
     @media (min-width: 768px) {
         margin-left: 369px;
         margin-top: 54px;
@@ -810,6 +815,7 @@
     }
 }
 .video-course {
+    padding: 0;
     @media (min-width: 768px) {
         position: relative;
     }
@@ -830,6 +836,10 @@
         font-size: 33.65px;
         width: 300px;
     }
+    @media (min-width: 1440px) {
+        margin-left: 20px;
+    }
+
 }
 .video-course__text {
     margin-left: 98px;
@@ -853,32 +863,38 @@
     }
     @media (min-width: 1440px) {
         font-size: 12px;
+        margin-left: 90px;
     }
     &::after {
         content: url(../../images/320px/section-four/section-four-2-320.jpg);
         display: block;
-        margin-left: -100px;
+        padding: 0;
+        width: 297px;
+        margin-left: -96px;
         margin-top: 25px;
         @media (min-width: 480px) {
             content: url(../../images/480px/section-four/four_3_480.jpg);
-            margin-left: -118px;
+            margin-left: -130px;
+            width: 446px;
             margin-bottom: 23px;
         }
         @media (min-width: 768px) {
             content: url(../../images/768px/section-four/four_3_768.jpg);
             position: absolute;
             top: -130px;
-            right: 415px; 
+            right: 205px; 
         }
         @media (min-width: 960px) {
             content: url(../../images/960px/section-four/four_3_960.jpg);
+            right: 300px;
         }
         @media (min-width: 1200px) {
             content: url(../../images/1200px/section-four/four_3_1200.jpg);
+            right: 300px;
         }
         @media (min-width: 1440px) {
             content: url(../../images/1440px/section-four/four_3_1440.jpg);
-            right: 400px;
+            right: 350px;
         }
     }
 }
@@ -1008,15 +1024,19 @@
 .course-components__title {
     margin-top: 25px;
     margin-left: 37px;
+    padding: 0;
+    max-width: 250px;
     line-height: 1.5;
     margin-bottom: 15px;
     @media (min-width: 480px) {
         margin-top: 36px;
-        margin-left: 57px;
+        margin-left: 47px;
+        max-width: 370px;
     }   
     @media (min-width: 768px) {
         margin-top: 37px;
-        font-size: 8.97px;
+        margin-left: 20px;
+        font-size: 13.46px;
     } 
     @media (min-width: 960px) {
         margin-left: 0;
