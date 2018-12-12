@@ -4740,7 +4740,7 @@ input:invalid {
   }
 
   .section-one {
-    font-size: 8.97px;
+    font-size: 7.85px;
     line-height: 13.46px;
   }
 
@@ -4833,7 +4833,7 @@ input:invalid {
   }
 
   .section-two {
-    font-size: 8.97px;
+    font-size: 7.85px;
     line-height: 13.46px;
   }
 
@@ -7328,6 +7328,11 @@ input:invalid {
     max-width: 330px;
   }
 
+  .section-one {
+    font-size: 8.75px;
+    line-height: 1.5;
+  }
+
   .section-one__img:after {
     font-size: 175.3px;
     bottom: -190px;
@@ -7342,6 +7347,11 @@ input:invalid {
 
   .facts-list {
     margin-top: 10em;
+  }
+
+  .section-two {
+    font-size: 8.75px;
+    line-height: 1.5;
   }
 
   .warning-section {
