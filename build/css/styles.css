@@ -2047,7 +2047,7 @@ header {
 }
 
 .special-offer::before {
-  content: url(../../images/320px/section-four/section-four-1-320.jpg);
+  content: url(../images/320px/section-four/section-four-1-320.jpg);
   display: block;
   margin: 40px 50px 10px;
 }
@@ -2297,7 +2297,7 @@ header {
 }
 
 .video-course__text::after {
-  content: url(../../images/320px/section-four/section-four-2-320.jpg);
+  content: url(../images/320px/section-four/section-four-2-320.jpg);
   display: block;
   padding: 0;
   width: 297px;
@@ -3854,7 +3854,7 @@ input:invalid {
   }
 
   .special-offer::before {
-    content: url(../../images/480px/section-four/four_1_480.jpg);
+    content: url(../images/480px/section-four/four_1_480.jpg);
     margin-left: 70px;
   }
 
@@ -4006,7 +4006,7 @@ input:invalid {
   }
 
   .video-course__text::after {
-    content: url(../../images/480px/section-four/four_3_480.jpg);
+    content: url(../images/480px/section-four/four_3_480.jpg);
     margin-left: -130px;
     width: 446px;
     margin-bottom: 23px;
@@ -5186,7 +5186,7 @@ input:invalid {
   }
 
   .special-offer::before {
-    content: url(../../images/768px/section-four/four_1_768.jpg);
+    content: url(../images/768px/section-four/four_1_768.jpg);
     margin-left: 70px;
     margin-right: 15px;
   }
@@ -5299,7 +5299,7 @@ input:invalid {
   }
 
   .after-course::after {
-    content: url(../../images/768px/section-four/four_2_768.jpg);
+    content: url(../images/768px/section-four/four_2_768.jpg);
     display: block;
     position: absolute;
     left: 435px;
@@ -5386,14 +5386,14 @@ input:invalid {
   }
 
   .video-course__text::after {
-    content: url(../../images/768px/section-four/four_3_768.jpg);
+    content: url(../images/768px/section-four/four_3_768.jpg);
     position: absolute;
     top: -130px;
     right: 205px;
   }
 
   .vc-class-for-image::after {
-    content: url(../../images/768px/section-four/four_4_768.jpg);
+    content: url(../images/768px/section-four/four_4_768.jpg);
     display: block;
     position: absolute;
     top: -70px;
@@ -6474,7 +6474,7 @@ input:invalid {
   }
 
   .special-offer::before {
-    content: url(../../images/960px/section-four/four_1_960.jpg);
+    content: url(../images/960px/section-four/four_1_960.jpg);
     margin-right: 10px;
   }
 
@@ -6560,7 +6560,7 @@ input:invalid {
   }
 
   .after-course::after {
-    content: url(../../images/960px/section-four/four_2_960.jpg);
+    content: url(../images/960px/section-four/four_2_960.jpg);
     left: 470px;
   }
 
@@ -6631,12 +6631,12 @@ input:invalid {
   }
 
   .video-course__text::after {
-    content: url(../../images/960px/section-four/four_3_960.jpg);
+    content: url(../images/960px/section-four/four_3_960.jpg);
     right: 300px;
   }
 
   .vc-class-for-image::after {
-    content: url(../../images/960px/section-four/four_4_960.jpg);
+    content: url(../images/960px/section-four/four_4_960.jpg);
   }
 
   .video-course-list {
@@ -7511,7 +7511,7 @@ input:invalid {
   }
 
   .special-offer::before {
-    content: url(../../images/1200px/section-four/four_1_1200.jpg);
+    content: url(../images/1200px/section-four/four_1_1200.jpg);
   }
 
   .brand-color-text {
@@ -7574,7 +7574,7 @@ input:invalid {
   }
 
   .after-course::after {
-    content: url(../../images/1200px/section-four/four_2_1200.jpg);
+    content: url(../images/1200px/section-four/four_2_1200.jpg);
   }
 
   .after-course__title {
@@ -7630,12 +7630,12 @@ input:invalid {
   }
 
   .video-course__text::after {
-    content: url(../../images/1200px/section-four/four_3_1200.jpg);
+    content: url(../images/1200px/section-four/four_3_1200.jpg);
     right: 300px;
   }
 
   .vc-class-for-image::after {
-    content: url(../../images/1200px/section-four/four_4_1200.jpg);
+    content: url(../images/1200px/section-four/four_4_1200.jpg);
     top: -105px;
   }
 
@@ -8451,7 +8451,7 @@ input:invalid {
   }
 
   .special-offer::before {
-    content: url(../../images/1440px/section-four/four_1_1440.jpg);
+    content: url(../images/1440px/section-four/four_1_1440.jpg);
   }
 
   .brand-color-text {
@@ -8502,7 +8502,7 @@ input:invalid {
   }
 
   .after-course::after {
-    content: url(../../images/1440px/section-four/four_2_1440.jpg);
+    content: url(../images/1440px/section-four/four_2_1440.jpg);
     left: 500px;
   }
 
@@ -8561,12 +8561,12 @@ input:invalid {
   }
 
   .video-course__text::after {
-    content: url(../../images/1440px/section-four/four_3_1440.jpg);
+    content: url(../images/1440px/section-four/four_3_1440.jpg);
     right: 350px;
   }
 
   .vc-class-for-image::after {
-    content: url(../../images/1440px/section-four/four_4_1440.jpg);
+    content: url(../images/1440px/section-four/four_4_1440.jpg);
     top: -50px;
     left: 450px;
   }
