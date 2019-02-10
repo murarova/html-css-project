@@ -1,12 +1,12 @@
 .section-two {
   font-family: $main-font;
   font-weight: 500;
-  font-size: 9px;
-  line-height: 13px;
+  font-size: 8.7px;
+  line-height: 13.67px;  
 
   @media (min-width: 480px) {
     font-size: 13.5px;
-    line-height: 19.5px;
+    line-height: 20.5px;
   }
 
   @media (min-width: 768px) {
@@ -31,7 +31,7 @@
 }
 
 .warning-section {
-  padding-top: 40px;
+  padding-top: 45px;
 
   @media (min-width: 480px) {
     padding-top: 63px;
@@ -232,6 +232,11 @@
 .warning-section-list__list-item--title {
   padding-bottom: 2px;
 
+  @media (min-width: 480px) {
+    padding-bottom: 0px;
+    line-height: 20.5px;
+  }
+
   @media (min-width: 768px) {
     padding-bottom: 7px;
   }
@@ -252,6 +257,10 @@
   position: relative;
 
   
+  @media (min-width: 480px) {
+    padding-bottom: 12px;
+  }
+
   @media (min-width: 768px) {
     width: 80%;
   }
@@ -303,9 +312,8 @@
 }
 
 .warning-section-list__list-item--text {
-  padding-bottom: 6px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 480px) {
     padding-bottom: 0px;
   }
 }
@@ -314,7 +322,8 @@
 .career-section__list-item,
 .steps-section__list-text {
   @extend %uppercase;
-  font-size: 9px;
+  font-size: 8.7px;
+  line-height: 13.67px;
   font-weight: 800;
   color: #000;
 
@@ -359,10 +368,14 @@
   font-weight: 800;
   padding-left: 25px;
   padding-bottom: 6px;
+  font-size: 9px;
+  line-height: 13px;
 
   @media (min-width: 480px) {
     padding-left: 40px;
     padding-bottom: 10px;
+    font-size: 13.5px;
+    line-height: 19.5px;
   }
 
   @media (min-width: 768px) {
@@ -508,7 +521,7 @@
     height: 1px;
     background: #000;
     position: absolute;
-    top: 6px;
+    top: 10px;
     left: -14px;
 
     @media (min-width: 480px) {
@@ -549,10 +562,14 @@
   color: $base-color-third;
   padding-left: 25px;
   padding-bottom: 27px;
+  font-size: 9px;
+  line-height: 13px;
 
   @media (min-width: 480px) {
     padding-left: 40px;
     padding-bottom: 40px;
+    font-size: 13.5px;
+    line-height: 19.5px;
   }
 
   @media (min-width: 768px) {
@@ -609,9 +626,9 @@
   padding-bottom: 8px;
 
   @media (min-width: 480px) {
-    font-size: 14px;
+    font-size: 13.5px;
     line-height: 19.5px;
-    padding: 3px 0 15px 40px;
+    padding: 3px 0 15px 35px;
   }
 
   @media (min-width: 768px) {
@@ -659,8 +676,15 @@
 }
 
 .career-section__list-item-text {
-  padding-left: 5px;
-  padding-bottom: 15px;
+  padding-left: 2px;
+  font-size: 9px;
+  line-height: 13px;
+
+  @media (min-width: 480px) {
+    font-size: 13.5px;
+    line-height: 19.5px;
+    padding-top: 3px;
+  }
 
   @media (min-width: 768px) {
     padding: 0;
@@ -744,6 +768,10 @@
 }
 
 .steps-section {
+  @media (min-width: 480px) {
+    padding-top: 30px;
+  }
+
   @media (min-width: 960px) {
     padding-top: 60px;
   }
@@ -757,7 +785,43 @@
 
 .steps-section__title {
   padding-left: 18px;
-  padding-bottom: 6px;
+  padding-bottom: 7px;
+
+  &:after {
+    content: "4";
+    font-size: 138.65px;
+    font-weight: 800;
+    position: absolute;
+    top: 50px;
+    right: 110px;
+    color: #f5f5f5;
+    z-index: -1;
+
+    @media(min-width: 480px) {
+      font-size: 207.98px;
+      right: 160px;
+      top: -45px;
+    }
+
+  }
+
+  &::before {
+    content: "STEP";
+    font-size: 37.63px;
+    font-weight: 800;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    color: #f5f5f5;
+    z-index: -1;
+
+    @media(min-width: 480px) {
+      font-size: 56.45px;
+      right: 75px;
+      top: 55px;
+    }
+  }
 
   @media (min-width: 480px) {
     padding-left: 30px;
@@ -766,42 +830,7 @@
 
 
   @media (min-width: 768px) {
-
     padding: 40px 0 0;
-
-    &:after {
-      content: "4";
-      font-size: 298.8px;
-      font-weight: 800;
-      position: absolute;
-      top: 80px;
-      right: -30px;
-      color: #f5f5f5;
-      z-index: -1;
-    }
-
-    &::before {
-      content: "STEP";
-      font-size: 81.06px;
-      font-weight: 800;
-      transform: rotate(90deg);
-      position: absolute;
-      top: 80px;
-      right: -140px;
-      color: #f5f5f5;
-      z-index: -1;
-    }
-  }
-  @media (min-width: 960px) {
-    &::after {
-      font-size: 373.51px;
-      right: -10px;
-    }
-
-    &::before {
-      font-size: 101.33px;
-      right: -150px;
-    }
   }
 }
 
@@ -809,7 +838,8 @@
   position: relative;
   padding-left: 13px;
   padding-bottom: 10px;
-  font-size: 9px;
+  font-size: 9.69px;
+  line-height: 15.23px;
 
   @media (min-width: 480px) {
     padding: 5px 0 15px 25px;
@@ -910,7 +940,7 @@
     left: -2px;
 
     @media (min-width: 480px) {
-      left: 5px;
+      left: 0px;
       height: 300px;
     }
 
@@ -972,11 +1002,13 @@
     counter-increment: item;
     position: absolute;
     left: -2em;
-    font-size: 16.7px;
+    font-size: 16.36px;
     font-weight: 800;
 
     @media (min-width: 480px) {
-      font-size: 22px;
+      font-size: 24.54px;
+      line-height: 29.45px;
+      top: -8px;
     }
 
     @media (min-width: 768px) {
@@ -1128,13 +1160,14 @@
 
 .steps-section__text {
   display: block;
-  padding-left: 10px;
+  padding-left: 21px;
   padding-bottom: 22px;
-  font-size: 8px;
+  font-size: 9px;
+  line-height: 13px;
 
   @media (min-width: 480px) {
-    padding-left: 16px;
-    padding-bottom: 34px;
+    padding-left: 35px;
+    padding-bottom: 32px;
   }
 
   @media (min-width: 768px) {
@@ -1151,12 +1184,12 @@
     height: 2px;
     background: #000;
     position: absolute;
-    top: 7px;
-    left: -16px;
+    top: 9px;
+    left: -2px;
 
     @media (min-width: 480px) {
       width: 20px;
-      left: -20px;
+      left: 0px;
       top: 8px;
     }
 
@@ -1182,6 +1215,13 @@
   display: block;
   padding-bottom: 5px;
 
+  @media (min-width: 480px) {
+    padding-bottom: 7px;
+    line-height: 21.27px;
+    font-size: 13.09px;
+    font-weight: 700;
+  }
+
   @media (min-width: 768px) {
     width: 80%;
   }
@@ -1198,7 +1238,7 @@
   padding-bottom: 20px;
 
   @media (min-width: 480px) {
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: 768px) {
@@ -1219,15 +1259,17 @@
 
 .steps-section__text--accent {
   color: $brand-color;
-  position: relative;
   font-weight: 600;
   padding-bottom: 20px;
   font-size: 10px;
+  line-height: 13px;
   width: 90%;
   margin: 0 auto;
 
   @media (min-width: 480px) {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 19.5px;
+    padding-top: 5px;
     padding-bottom: 40px;
   }
 
@@ -1249,12 +1291,13 @@
     content: "/";
     font-size: 25px;
     position: absolute;
-    left: -15px;
-    top: 7px;
+    left: 6px;
+    top: 5px;
 
     @media (min-width: 480px) {
       font-size: 35px;
       top: 12px;
+      left: 10px;
     }
 
     @media (min-width: 768px) {
