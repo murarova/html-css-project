@@ -1079,6 +1079,7 @@ button {
   font-weight: 800;
   font-size: 0.5em;
   display: block;
+  box-shadow: 0 6px 25px -7px #ff6b08;
 }
 
 button:hover {
@@ -1101,7 +1102,7 @@ button:active {
 
 .head-section {
   background: url(../images/320px/header/GoIt_bg.png) center no-repeat;
-  background-size: 325px 90px;
+  background-size: 290px 80px;
   background-position: center;
   height: 100vh;
   max-height: 450px;
@@ -1235,21 +1236,18 @@ header {
   display: none;
 }
 
-.open-tag::before {
-  display: inline-block;
-  content: "<";
-  color: #16ebfe;
+.open-tag {
+  width: 15px;
+  height: 15px;
   position: absolute;
-  top: 0;
+  top: 12px;
+  left: -10px;
 }
 
-.close-tag::before {
-  display: inline-block;
-  content: "/ >";
-  color: #16ebfe;
+.close-tag {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -15px;
 }
 
 .quotes {
@@ -1762,11 +1760,14 @@ header {
 .benefits__slogan::before {
   display: block;
   content: "/";
+  font-weight: 800;
   font-size: 23px;
   position: absolute;
   left: -20px;
   top: -3px;
   color: #000000;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 
 .button--benefits-button {
@@ -2014,6 +2015,10 @@ header {
 }
 
 .picture-display-block768 {
+  display: none;
+}
+
+.dn::before {
   display: none;
 }
 
@@ -2384,6 +2389,7 @@ header {
   font-size: 15px;
 }
 
+
 .appear-after-768 {
   display: none;
 }
@@ -2424,6 +2430,10 @@ header {
   left: -20px;
   font-size: 16px;
   margin-bottom: 65px;
+}
+
+.goods__list {
+  overflow: hidden;
 }
 
 .goods__list-list-item {
@@ -2480,7 +2490,7 @@ input {
 .form {
   flex-direction: column;
   padding-top: 38px;
-  box-shadow: 0 14px 5px -9px #dedede;
+  box-shadow: 0 11px 20px 5px #dedede;
   padding-left: 45px;
   margin-bottom: 45px;
 }
@@ -2637,6 +2647,7 @@ input:invalid {
 .accent::before {
   display: inline-block;
   content: "/";
+  font-weight: 800;
   font-size: 2.6em;
   color: #000000;
   position: absolute;
@@ -2729,6 +2740,7 @@ input:invalid {
 
 .epilog__end {
   color: #ff6b08;
+  font-family: acrom;
   font-weight: 500;
   text-align: right;
   margin: auto;
@@ -3605,6 +3617,14 @@ input:invalid {
     max-width: 360px;
   }
 
+  .open-tag {
+    left: 10px;
+  }
+
+  .close-tag {
+    right: 5px;
+  }
+
   .quotes {
     font-size: 13.5px;
     width: 360px;
@@ -3778,7 +3798,7 @@ input:invalid {
   .awards__caption {
     font-size: 13.5px;
     width: 200px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 
   .awards__description {
@@ -4102,13 +4122,6 @@ input:invalid {
     font-size: 11.78px;
     width: 230px;
     line-height: 1.5;
-  }
-
-  .order-list-item1,
-  .order-list-item2 {
-    font-size: 25.21px;
-    top: -3px;
-    left: -55px;
   }
 
   .margin-center {
@@ -4755,6 +4768,17 @@ input:invalid {
     content: "\2014";
   }
 
+  .open-tag {
+    top: -5px;
+    font-size: 15.46px;
+    left: 7px;
+  }
+
+  .close-tag {
+    right: 7px;
+    font-size: 15.46px;
+  }
+
   .quotes {
     font-size: 7.84px;
     margin: 0 0 30px 10px;
@@ -5176,6 +5200,7 @@ input:invalid {
 
   .developer__desription {
     margin-bottom: 30px;
+    line-height: 1.7;
   }
 
   .developer__list--margin {
@@ -5509,6 +5534,12 @@ input:invalid {
     margin-left: 40px;
     font-size: 7.85px;
     width: 180px;
+  }
+
+  .order-list-item1,
+  .order-list-item2 {
+    font-size: 25.21px;
+    top: -3px;
   }
 
   .form {
@@ -6356,7 +6387,7 @@ input:invalid {
 
   .benefits__slogan {
     font-size: 11.22px;
-    width: 200px;
+    width: 250px;
     padding-top: 15px;
   }
 
@@ -6763,6 +6794,7 @@ input:invalid {
   .order-list-item1,
   .order-list-item2 {
     font-size: 21px;
+    left: -48px;
   }
 
   .form {
@@ -7360,6 +7392,14 @@ input:invalid {
     margin-right: 3.33%;
   }
 
+  .open-tag {
+    left: 25px;
+  }
+
+  .close-tag {
+    font-size: 17px;
+  }
+
   .quotes {
     font-size: 10.5px;
     max-width: 330px;
@@ -7447,7 +7487,9 @@ input:invalid {
   .benefits__slogan {
     font-size: 10px;
     padding-top: 20px;
-    width: 220px;
+    width: 250px;
+    margin-left: 65px;
+    margin-right: 18px;
   }
 
   .button--benefits-button {
@@ -7538,6 +7580,7 @@ input:invalid {
   .developer__item {
     font-size: 10px;
     margin-bottom: 12px;
+    width: 260px;
   }
 
   .developer__desription {
@@ -7747,7 +7790,6 @@ input:invalid {
   .order-list-item1,
   .order-list-item2 {
     font-size: 18.75px;
-    left: -45px;
   }
 
   .form {
@@ -8386,6 +8428,7 @@ input:invalid {
   .benefits__slogan {
     font-size: 12px;
     padding-top: 15px;
+    width: 255px;
   }
 
   .university__caption {
@@ -8471,7 +8514,7 @@ input:invalid {
 
   .developer__slogan {
     font-size: 12px;
-    line-height: 1.4;
+    line-height: 1.5;
     padding-left: 50px;
   }
 
@@ -8485,11 +8528,20 @@ input:invalid {
 
   .developer__item {
     font-size: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 7px;
   }
 
   .developer__desription {
     font-size: 10.5px;
+    width: 260px;
+  }
+
+  .mb25 {
+    margin-bottom: 75px;
+  }
+
+  .mb1440-30 {
+    margin-bottom: 27px;
   }
 
   .section-four-wrapper {
