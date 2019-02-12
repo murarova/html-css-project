@@ -119,11 +119,13 @@
     &::before {
       display: block;
       content: "/";
+      font-weight: 800;
       font-size: 23px;
       position: absolute;
       left: -20px;
       top: -3px;
       color: $base-color-first;
+      transform: rotate(10deg);
       @media (min-width: 480px) {
         font-size: 32px;
         left: -25px;
@@ -143,6 +145,9 @@
       @media (min-width: 1440px) {
         font-size: 30px;
         padding-top: 15px;
+        
+
+        
       }
     }
     @media (min-width: 480px) {
@@ -158,18 +163,25 @@
     }
     @media (min-width: 960px) {
       font-size: 11.22px;
-      width: 200px;
+      width: 250px;
       padding-top: 15px;
+    
     }
     @media (min-width: 1200px) {
       font-size: 10px;
       padding-top: 20px;
-      width: 220px;
+      width: 250px;
+     margin-left: 65px;
+     margin-right: 18px;
+      
     }
   
     @media (min-width: 1440px) {
       font-size: 12px;
       padding-top: 15px;
+      width: 255px;
+      
+      
     }
   }
   .button--benefits-button {
@@ -456,7 +468,7 @@
     @media (min-width: 480px) {
       font-size: 13.5px;
       width: 200px;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
     }
     @media (min-width: 768px) {
       font-size: 8.97px;
@@ -474,6 +486,7 @@
       font-size: 12px;
       width: 180px;
       margin-top: 20;
+      
     }
   }
   
@@ -763,7 +776,7 @@
     }
     @media (min-width: 1440px) {
       font-size: 12px;
-      line-height: 1.4;
+      line-height: 1.5;
       padding-left: 50px;
     }
   }
@@ -845,10 +858,11 @@
     @media (min-width: 1200px) {
       font-size: 10px;
       margin-bottom: 12px;
+      width: 260px;
     }
     @media (min-width: 1440px) {
       font-size: 12px;
-      margin-bottom: 16px;
+      margin-bottom: 7px;
     }
   }
   .developer__desription {
@@ -858,6 +872,7 @@
     }
     @media (min-width: 768px) {
       margin-bottom: 30px;
+      line-height: 1.7;
     }
     @media (min-width: 960px) {
       font-size: 11.22px;
@@ -869,6 +884,7 @@
     }
     @media (min-width: 1440px) {
       font-size: 10.5px;
+      width: 260px;
     }
   }
   .developer__list--margin {
@@ -894,6 +910,9 @@
   }
   .mb25 {
     margin-bottom: 25px;
+    @media (min-width: 1440px) {
+      margin-bottom: 75px;
+    }
   }
   .mb30 {
     margin-bottom: 30px;
@@ -915,4 +934,14 @@
       display: block;
     }
   }
-  
+  .mb1440-30 {
+    @media (min-width: 1440px) {
+      margin-bottom: 27px;
+    }
+  }
+ .dn {
+   &::before {
+     display: none;
+     
+   }
+ }

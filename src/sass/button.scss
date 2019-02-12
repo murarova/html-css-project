@@ -8,15 +8,16 @@ button:focus {
 button {
   width: 145px;
   height: 37px;
-  background: #ff6b08;
+  background: $brand-color;
   color: #ffffff;
   text-transform: uppercase;
   font-family: $main-font;
   font-weight: 800;
   font-size: 0.5em;
   display: block;
+  box-shadow: 0 6px 25px -7px $brand-color;
   &:hover {
-      box-shadow: 0 0 3px #ff6b08;
+      box-shadow: 0 0 3px $brand-color;
   }
   &:active {
       box-shadow: 0 0 3px #ffffff;
