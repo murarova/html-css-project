@@ -285,6 +285,8 @@
   @extend %title;
   @extend %uppercase;
   margin-bottom: 25px;
+  font-size: 13.68px;
+  line-height: 17.1px;
 
   @media (min-width: 768px) {
     font-size: 26px;

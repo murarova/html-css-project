@@ -1279,6 +1279,8 @@ header {
 
 .start-work__title {
   margin-bottom: 25px;
+  font-size: 13.68px;
+  line-height: 17.1px;
 }
 
 .start-work__list-title {
@@ -1955,7 +1957,7 @@ header {
 }
 
 .steps-section__list-text--color {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .steps-section__text--accent {
@@ -2675,9 +2677,12 @@ header {
   font-size: 15px;
 }
 
-
 .appear-after-768 {
   display: none;
+}
+
+.no-padding {
+  padding: 0;
 }
 
 .goods {
@@ -4452,7 +4457,7 @@ input:invalid {
   .awards__caption {
     font-size: 13.5px;
     width: 200px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 
   .awards__description {
@@ -5424,6 +5429,17 @@ input:invalid {
 
   .high-resolution-after::after {
     content: "\2014";
+  }
+
+  .open-tag {
+    top: -5px;
+    font-size: 15.46px;
+    left: 7px;
+  }
+
+  .close-tag {
+    right: 7px;
+    font-size: 15.46px;
   }
 
   .quotes {
