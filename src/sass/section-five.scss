@@ -18,8 +18,12 @@
 }
 
 .section-five {
-  margin-top: 70px;
+
   overflow: hidden;
+
+  @media (min-width: 1200px) {
+    margin-top: 70px;
+  }
 }
 
 .goods__caption {
@@ -440,6 +444,7 @@ input:invalid {
 
   @media (min-width: 480px) {
     font-size: 18px;
+    margin-top: 20px;
   }
 
   @media (min-width: 768px) {
@@ -1054,6 +1059,7 @@ input:invalid {
 
   @media (min-width: 480px) {
     width: 315px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: 768px) {
@@ -1063,9 +1069,9 @@ input:invalid {
   }
 
   @media (min-width: 960px) {
-    width: 315px;
-    margin-left: 100px;
-    margin-top: 80px;
+    width: 300px;
+    margin-left: 85px;
+    margin-top: 90px;
   }
 
   @media (min-width: 1200px) {
@@ -1147,6 +1153,7 @@ input:invalid {
 
   @media (min-width: 960px) {
     font-size: 11.22px;
+    padding: 0;
   }
 
   @media (min-width: 1200px) {
