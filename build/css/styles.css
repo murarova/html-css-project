@@ -3038,6 +3038,7 @@ input:invalid {
   font-weight: 500;
   text-align: right;
   margin: auto;
+  margin-bottom: 70px;
   font-size: 9.58px;
 }
 
@@ -8319,6 +8320,7 @@ input:invalid {
 
   .epilog__end {
     font-size: 11.22px;
+    margin-bottom: 120px;
     padding: 0;
   }
 
@@ -9651,7 +9653,7 @@ input:invalid {
   }
 
   .epilog {
-    width: 260px;
+    width: 255px;
     margin-left: 90px;
   }
 
@@ -11007,7 +11009,7 @@ input:invalid {
   }
 
   .epilog {
-    width: 300px;
+    width: 295px;
     margin-left: 120px;
   }
 
