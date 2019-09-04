@@ -2785,8 +2785,9 @@ input {
   flex-direction: column;
   padding-top: 38px;
   box-shadow: 0 11px 20px 5px #dedede;
-  padding-left: 45px;
   margin-bottom: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .form__text {
@@ -2821,6 +2822,7 @@ input:invalid {
 .button--form-button {
   width: 116px;
   height: 23px;
+  margin: 0 auto;
   margin-bottom: 45px;
   font-size: 5.31px;
 }
@@ -4794,9 +4796,10 @@ input:invalid {
   }
 
   .form {
-    padding-left: 65px;
     width: 370px;
-    margin: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin: 0 auto;
   }
 
   .form__text {
@@ -6595,6 +6598,9 @@ input:invalid {
   }
 
   .form {
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
     width: 290px;
   }
 
@@ -6795,15 +6801,22 @@ input:invalid {
   }
 }
 
-@media (min-width: 768px) and (min-width: 768px) {
-  .form__underline::after {
-    width: 200px;
-  }
-}
-
 @media (min-width: 768px) and (min-width: 1440px) {
   .form__underline::after {
     width: 270px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 960px) {
+  .form__underline::after {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .form__underline::after {
+    width: 200px;
+    opacity: 1;
   }
 }
 
@@ -8195,6 +8208,8 @@ input:invalid {
   }
 
   .form {
+    padding-left: 75px;
+    padding-right: 75px;
     width: 350px;
   }
 
@@ -9560,6 +9575,8 @@ input:invalid {
   }
 
   .form {
+    padding-left: 67px;
+    padding-right: 67px;
     width: 335px;
   }
 
@@ -10918,6 +10935,8 @@ input:invalid {
   }
 
   .form {
+    padding-left: 60px;
+    padding-right: 60px;
     width: 390px;
   }
 
