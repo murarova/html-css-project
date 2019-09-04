@@ -6622,7 +6622,6 @@ input:invalid {
   .form__underline::after {
     display: block;
     content: "";
-    width: 160px;
     height: 1px;
     background: #d9d6d6;
   }
@@ -6803,7 +6802,7 @@ input:invalid {
 
 @media (min-width: 768px) and (min-width: 1440px) {
   .form__underline::after {
-    width: 270px;
+    opacity: 0;
   }
 }
 
@@ -6815,7 +6814,6 @@ input:invalid {
 
 @media (min-width: 768px) and (min-width: 768px) {
   .form__underline::after {
-    width: 200px;
     opacity: 1;
   }
 }
